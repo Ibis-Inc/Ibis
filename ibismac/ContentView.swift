@@ -1,57 +1,35 @@
-//
-//  ContentView.swift
-//  ibismac
-//
-//  Created by Ethan Eswaran on 22/6/2023.
-//
-
 import SwiftUI
-import SwiftData
+import WebKit
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var urlInput = ""
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+        HStack {
+            TextField("Search or Enter URL...", text: $urlInput)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(10)
+                .autocorrectionDisabled(true)
         }
+        Webview(url: URL(string: "https://developer.apple.com")!)
     }
+}
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
+struct Webview: NSViewRepresentable {
+    let url: URL
+    
+    func makeNSView(context: Context) -> WKWebView {
+        let webView = WKWebView()
+        webView.load(URLRequest(url: url))
+        
+        return webView
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
+    
+    func updateNSView(_ webView: WKWebView, context: Context) {}
 }
 
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
 }
+ 

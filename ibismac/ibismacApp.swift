@@ -1,10 +1,3 @@
-//
-//  ibismacApp.swift
-//  ibismac
-//
-//  Created by Ethan Eswaran on 22/6/2023.
-//
-
 import SwiftUI
 import SwiftData
 
