@@ -7,25 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3220B2CB2B318E9000D2D5A9 /* IbisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220B2CA2B318E9000D2D5A9 /* IbisApp.swift */; };
-		3220B2CD2B318E9000D2D5A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220B2CC2B318E9000D2D5A9 /* ContentView.swift */; };
-		3220B2CF2B318E9000D2D5A9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220B2CE2B318E9000D2D5A9 /* Item.swift */; };
-		3220B2D12B318E9200D2D5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3220B2D02B318E9200D2D5A9 /* Assets.xcassets */; };
-		3220B2D42B318E9200D2D5A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3220B2D32B318E9200D2D5A9 /* Preview Assets.xcassets */; };
+		322BAAD42B31906100B01E29 /* IbisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322BAAD32B31906100B01E29 /* IbisApp.swift */; };
+		322BAAD62B31906100B01E29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322BAAD52B31906100B01E29 /* ContentView.swift */; };
+		322BAAD82B31906200B01E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322BAAD72B31906200B01E29 /* Assets.xcassets */; };
+		322BAADB2B31906200B01E29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322BAADA2B31906200B01E29 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3220B2C72B318E9000D2D5A9 /* Ibis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibis.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3220B2CA2B318E9000D2D5A9 /* IbisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbisApp.swift; sourceTree = "<group>"; };
-		3220B2CC2B318E9000D2D5A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3220B2CE2B318E9000D2D5A9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		3220B2D02B318E9200D2D5A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3220B2D32B318E9200D2D5A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3220B2D52B318E9200D2D5A9 /* Ibis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ibis.entitlements; sourceTree = "<group>"; };
+		322BAAD02B31906100B01E29 /* Ibis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		322BAAD32B31906100B01E29 /* IbisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbisApp.swift; sourceTree = "<group>"; };
+		322BAAD52B31906100B01E29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		322BAAD72B31906200B01E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		322BAADA2B31906200B01E29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		322BAADC2B31906200B01E29 /* Ibis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ibis.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3220B2C42B318E9000D2D5A9 /* Frameworks */ = {
+		322BAACD2B31906100B01E29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,39 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3220B2BE2B318E9000D2D5A9 = {
+		322BAAC72B31906100B01E29 = {
 			isa = PBXGroup;
 			children = (
-				3220B2C92B318E9000D2D5A9 /* Ibis */,
-				3220B2C82B318E9000D2D5A9 /* Products */,
+				322BAAD22B31906100B01E29 /* Ibis */,
+				322BAAD12B31906100B01E29 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3220B2C82B318E9000D2D5A9 /* Products */ = {
+		322BAAD12B31906100B01E29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3220B2C72B318E9000D2D5A9 /* Ibis.app */,
+				322BAAD02B31906100B01E29 /* Ibis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3220B2C92B318E9000D2D5A9 /* Ibis */ = {
+		322BAAD22B31906100B01E29 /* Ibis */ = {
 			isa = PBXGroup;
 			children = (
-				3220B2CA2B318E9000D2D5A9 /* IbisApp.swift */,
-				3220B2CC2B318E9000D2D5A9 /* ContentView.swift */,
-				3220B2CE2B318E9000D2D5A9 /* Item.swift */,
-				3220B2D02B318E9200D2D5A9 /* Assets.xcassets */,
-				3220B2D52B318E9200D2D5A9 /* Ibis.entitlements */,
-				3220B2D22B318E9200D2D5A9 /* Preview Content */,
+				322BAAD32B31906100B01E29 /* IbisApp.swift */,
+				322BAAD52B31906100B01E29 /* ContentView.swift */,
+				322BAAD72B31906200B01E29 /* Assets.xcassets */,
+				322BAADC2B31906200B01E29 /* Ibis.entitlements */,
+				322BAAD92B31906200B01E29 /* Preview Content */,
 			);
 			path = Ibis;
 			sourceTree = "<group>";
 		};
-		3220B2D22B318E9200D2D5A9 /* Preview Content */ = {
+		322BAAD92B31906200B01E29 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3220B2D32B318E9200D2D5A9 /* Preview Assets.xcassets */,
+				322BAADA2B31906200B01E29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -75,13 +72,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3220B2C62B318E9000D2D5A9 /* Ibis */ = {
+		322BAACF2B31906100B01E29 /* Ibis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3220B2D82B318E9200D2D5A9 /* Build configuration list for PBXNativeTarget "Ibis" */;
+			buildConfigurationList = 322BAADF2B31906200B01E29 /* Build configuration list for PBXNativeTarget "Ibis" */;
 			buildPhases = (
-				3220B2C32B318E9000D2D5A9 /* Sources */,
-				3220B2C42B318E9000D2D5A9 /* Frameworks */,
-				3220B2C52B318E9000D2D5A9 /* Resources */,
+				322BAACC2B31906100B01E29 /* Sources */,
+				322BAACD2B31906100B01E29 /* Frameworks */,
+				322BAACE2B31906100B01E29 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -89,25 +86,25 @@
 			);
 			name = Ibis;
 			productName = Ibis;
-			productReference = 3220B2C72B318E9000D2D5A9 /* Ibis.app */;
+			productReference = 322BAAD02B31906100B01E29 /* Ibis.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3220B2BF2B318E9000D2D5A9 /* Project object */ = {
+		322BAAC82B31906100B01E29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					3220B2C62B318E9000D2D5A9 = {
+					322BAACF2B31906100B01E29 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 3220B2C22B318E9000D2D5A9 /* Build configuration list for PBXProject "Ibis" */;
+			buildConfigurationList = 322BAACB2B31906100B01E29 /* Build configuration list for PBXProject "Ibis" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,43 +112,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3220B2BE2B318E9000D2D5A9;
-			productRefGroup = 3220B2C82B318E9000D2D5A9 /* Products */;
+			mainGroup = 322BAAC72B31906100B01E29;
+			productRefGroup = 322BAAD12B31906100B01E29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3220B2C62B318E9000D2D5A9 /* Ibis */,
+				322BAACF2B31906100B01E29 /* Ibis */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3220B2C52B318E9000D2D5A9 /* Resources */ = {
+		322BAACE2B31906100B01E29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3220B2D42B318E9200D2D5A9 /* Preview Assets.xcassets in Resources */,
-				3220B2D12B318E9200D2D5A9 /* Assets.xcassets in Resources */,
+				322BAADB2B31906200B01E29 /* Preview Assets.xcassets in Resources */,
+				322BAAD82B31906200B01E29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3220B2C32B318E9000D2D5A9 /* Sources */ = {
+		322BAACC2B31906100B01E29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3220B2CD2B318E9000D2D5A9 /* ContentView.swift in Sources */,
-				3220B2CF2B318E9000D2D5A9 /* Item.swift in Sources */,
-				3220B2CB2B318E9000D2D5A9 /* IbisApp.swift in Sources */,
+				322BAAD62B31906100B01E29 /* ContentView.swift in Sources */,
+				322BAAD42B31906100B01E29 /* IbisApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3220B2D62B318E9200D2D5A9 /* Debug */ = {
+		322BAADD2B31906200B01E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +210,7 @@
 			};
 			name = Debug;
 		};
-		3220B2D72B318E9200D2D5A9 /* Release */ = {
+		322BAADE2B31906200B01E29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +265,7 @@
 			};
 			name = Release;
 		};
-		3220B2D92B318E9200D2D5A9 /* Debug */ = {
+		322BAAE02B31906200B01E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -286,7 +282,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = appleshoops.Ibis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		3220B2DA2B318E9200D2D5A9 /* Release */ = {
+		322BAAE12B31906200B01E29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -312,7 +307,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = appleshoops.Ibis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3220B2C22B318E9000D2D5A9 /* Build configuration list for PBXProject "Ibis" */ = {
+		322BAACB2B31906100B01E29 /* Build configuration list for PBXProject "Ibis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3220B2D62B318E9200D2D5A9 /* Debug */,
-				3220B2D72B318E9200D2D5A9 /* Release */,
+				322BAADD2B31906200B01E29 /* Debug */,
+				322BAADE2B31906200B01E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3220B2D82B318E9200D2D5A9 /* Build configuration list for PBXNativeTarget "Ibis" */ = {
+		322BAADF2B31906200B01E29 /* Build configuration list for PBXNativeTarget "Ibis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3220B2D92B318E9200D2D5A9 /* Debug */,
-				3220B2DA2B318E9200D2D5A9 /* Release */,
+				322BAAE02B31906200B01E29 /* Debug */,
+				322BAAE12B31906200B01E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3220B2BF2B318E9000D2D5A9 /* Project object */;
+	rootObject = 322BAAC82B31906100B01E29 /* Project object */;
 }
