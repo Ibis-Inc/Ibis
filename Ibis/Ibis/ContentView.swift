@@ -2,20 +2,34 @@ import SwiftUI
 import WebKit
 
 struct WebView: NSViewRepresentable {
-    let url: URL
-    
+    @Binding var url: URL
     func makeNSView(context: Context) -> WKWebView {
         let webView = WKWebView()
         webView.load(URLRequest(url: url))
         return webView
     }
-    func updateNSView(_ nsView: WKWebView, context: Context) {}
+    func updateNSView(_ nsView: WKWebView, context: Context) {
+        nsView.load(URLRequest(url: url))
+    }
 }
 
 struct ContentView: View {
+    
+    @State private var urlString: String = "https://www.google.com"
+    @State private var url: URL =  URL(string:"https://www.google.com")!
+    
+    func loadURL() {
+        if let url = URL(string: urlString) {
+            self.url = url
+        }
+    }
+    
     var body: some View {
+        TextField("Enter URL Or Search", text: $urlString, onCommit: {
+            loadURL()
+        })
         VStack {
-            WebView(url: URL(string: "https://www.google.com")!)
+            WebView(url: $url)
         }
         .padding()
     }
