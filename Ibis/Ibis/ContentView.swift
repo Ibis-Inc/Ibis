@@ -1,24 +1,5 @@
-//
-//  ContentView.swift
-//  Ibis
-//
-//  Created by Ethan Eswaran on 19/12/2023.
-//
-
 import SwiftUI
+import WebKit
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+var webView: WKWebView!
 
-#Preview {
-    ContentView()
-}
