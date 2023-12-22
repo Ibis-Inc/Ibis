@@ -24,10 +24,19 @@ struct ContentView: View {
         }
     }
     
+    
     var body: some View {
-        TextField("Enter URL Or Search", text: $urlString, onCommit: {
-            loadURL()
-        })
+        HStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .background(Color.accent)
+                    .frame(width: 100, height: 100)
+                TextField("Enter URL Or Search", text: $urlString, onCommit: {
+                    loadURL()
+                })
+                .background(Color.clear)
+            }
+        }
         VStack {
             WebView(url: $url)
         }
