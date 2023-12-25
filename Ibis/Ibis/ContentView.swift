@@ -29,12 +29,15 @@ struct ContentView: View {
         HStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 8)
-                    .background(Color.accent)
-                    .frame(width: 100, height: 100)
+                    .fill(Color.accent.opacity(0.3))
+                    .frame(height: 30)
+                
                 TextField("Enter URL Or Search", text: $urlString, onCommit: {
                     loadURL()
                 })
-                .background(Color.clear)
+                .textFieldStyle(.plain)
+                .padding(.leading, 10)
+                
             }
         }
         VStack {
