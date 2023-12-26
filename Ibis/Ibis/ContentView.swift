@@ -26,24 +26,24 @@ struct ContentView: View {
     
     
     var body: some View {
-        HStack {
+        WebView(url: $url)
+        .padding(.horizontal, 7)
+        .overlay(alignment: .top) {
             ZStack {
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.accent.opacity(0.3))
+                    .fill(Color.accent.opacity(0.5))
                     .frame(height: 30)
+                    .padding(.vertical, 7)
                 
                 TextField("Enter URL Or Search", text: $urlString, onCommit: {
                     loadURL()
                 })
                 .textFieldStyle(.plain)
-                .padding(.leading, 10)
+                .padding(.leading, 20)
                 
             }
+            .padding(.horizontal)
         }
-        VStack {
-            WebView(url: $url)
-        }
-        .padding()
     }
 }
 
