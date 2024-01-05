@@ -16,7 +16,7 @@ struct WebView: NSViewRepresentable {
 struct ContentView: View {
     
     @State private var urlString: String = "https://www.google.com"
-    @State private var url: URL =  URL(string:"https://www.google.com")!
+    @State private var url: URL =  URL(string:"https://search.brave.com")!
     
     func loadURL() {
         if let url = URL(string: urlString) {
@@ -31,9 +31,10 @@ struct ContentView: View {
         .overlay(alignment: .top) {
             ZStack {
                 RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.accent.opacity(0.5))
+                    .fill(.ultraThinMaterial)
                     .frame(height: 30)
                     .padding(.vertical, 7)
+                    .shadow(radius: 10)
                 
                 TextField("Enter URL Or Search", text: $urlString, onCommit: {
                     loadURL()
