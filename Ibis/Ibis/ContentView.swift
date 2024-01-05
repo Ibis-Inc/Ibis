@@ -15,8 +15,8 @@ struct WebView: NSViewRepresentable {
 
 struct ContentView: View {
     
-    @State private var urlString: String = "https://www.google.com"
-    @State private var url: URL =  URL(string:"https://search.brave.com")!
+    @State private var urlString: String = "Enter URL or Search"
+    @State private var url: URL =  URL(string:"https://en.wikipedia.org/wiki/Ibis")!
     
     func loadURL() {
         if let url = URL(string: urlString) {
