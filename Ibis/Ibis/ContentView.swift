@@ -18,6 +18,8 @@ struct ContentView: View {
     @State private var urlString: String = "Enter URL or Search"
     @State private var url: URL =  URL(string:"https://en.wikipedia.org/wiki/Ibis")!
     @State private var urlHover: Bool = false
+    @State private var barHover: Bool = false
+    @State private var textFieldFocus: Bool = false
     
     func loadURL() {
         if let url = URL(string: urlString) {
@@ -28,24 +30,25 @@ struct ContentView: View {
     
     var body: some View {
         WebView(url: $url)
-        .padding(.horizontal, 7)
         .overlay(
             Rectangle()
-                .fill(Color.red)
-                .frame(height: 10)
+                .fill(Color.clear)
+                .frame(height: urlHover ? 40:10)
                 .onHover { hovering in urlHover = hovering
                 },
             alignment: .top
         
         )
         .overlay(alignment: .top) {
-            if urlHover {
+            if urlHover || barHover {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(.ultraThinMaterial)
-                        .frame(height: 30)
-                        .padding(.vertical, 7)
-                        .shadow(radius: 10)
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(.ultraThinMaterial)
+                            .frame(height: 30)
+                            .padding(.vertical, 7)
+                            .shadow(radius: 10)
+                    }
                     
                     TextField("Enter URL Or Search", text: $urlString, onCommit: {
                         loadURL()
@@ -53,13 +56,18 @@ struct ContentView: View {
                     .textFieldStyle(.plain)
                     .padding(.leading, 20)
                     
+                    Rectangle()
+                        .fill(Color.clear)
+                        .frame(height: 30)
+                        .onHover { hovering in barHover = hovering }
+                        .allowsHitTesting(false)
                 }
+                .onHover { hovering in barHover = hovering }
                 .padding(.horizontal)
             }
         }
-            .padding(.horizontal)
-        }
     }
+}
 
 #Preview {
     ContentView()
