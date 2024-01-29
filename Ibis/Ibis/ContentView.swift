@@ -64,6 +64,8 @@ struct ContentView: View {
                 }
                 .onHover { hovering in barHover = hovering }
                 .padding(.horizontal)
+                .transition(.move(edge: .top))
+                .animation(.easeInOut(duration: 0.5))
             }
         }
     }
