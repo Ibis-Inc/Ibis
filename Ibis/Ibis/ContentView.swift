@@ -3,6 +3,9 @@ import WebKit
 
 struct WebView: NSViewRepresentable {
     @Binding var url: URL
+
+    
+
     func makeNSView(context: Context) -> WKWebView {
         let webView = WKWebView()
         webView.load(URLRequest(url: url))
