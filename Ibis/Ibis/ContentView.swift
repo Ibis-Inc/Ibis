@@ -19,7 +19,6 @@ struct ContentView: View {
     @State private var url: URL =  URL(string:"https://en.wikipedia.org/wiki/Ibis")!
     @State private var urlHover: Bool = false
     @State private var barHover: Bool = false
-    @State private var textFieldFocus: Bool = false
     
     func loadURL() {
         if let url = URL(string: urlString) {
@@ -65,8 +64,11 @@ struct ContentView: View {
                 .onHover { hovering in barHover = hovering }
                 .padding(.horizontal)
                 .transition(.move(edge: .top))
-                .animation(.easeInOut(duration: 0.5))
+                .animation(.easeInOut(duration: 0.3))
             }
+        }
+        .onChange(of: url) { oldValue, newValue in
+            urlString = newValue.absoluteString
         }
     }
 }
