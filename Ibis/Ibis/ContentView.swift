@@ -23,6 +23,7 @@ struct ContentView: View {
     @State private var urlHover: Bool = false
     @State private var barHover: Bool = false
     
+    
     func loadURL() {
         if let url = URL(string: urlString) {
             self.url = url
@@ -35,7 +36,7 @@ struct ContentView: View {
         .overlay(
             Rectangle()
                 .fill(Color.clear)
-                .frame(height: urlHover ? 40:10)
+                .frame(height: 10)
                 .onHover { hovering in urlHover = hovering
                 },
             alignment: .top
@@ -61,7 +62,6 @@ struct ContentView: View {
                     Rectangle()
                         .fill(Color.clear)
                         .frame(height: 30)
-                        .onHover { hovering in barHover = hovering }
                         .allowsHitTesting(false)
                 }
                 .onHover { hovering in barHover = hovering }
