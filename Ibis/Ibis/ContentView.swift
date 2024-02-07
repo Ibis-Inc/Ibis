@@ -35,9 +35,10 @@ struct ContentView: View {
         WebView(url: $url)
         .overlay(
             Rectangle()
-                .fill(Color.clear)
+                .fill(Color.red)
                 .frame(height: 10)
-                .onHover { hovering in urlHover = hovering
+                .onHover { hovering in 
+                    urlHover = hovering
                 },
             alignment: .top
         
@@ -51,7 +52,9 @@ struct ContentView: View {
                             .frame(height: 30)
                             .padding(.vertical, 7)
                             .shadow(radius: 10)
+                        
                     }
+                    
                     
                     TextField("Enter URL Or Search", text: $urlString, onCommit: {
                         loadURL()
@@ -60,11 +63,15 @@ struct ContentView: View {
                     .padding(.leading, 20)
                     
                     Rectangle()
-                        .fill(Color.clear)
+                        .fill(Color.blue)
                         .frame(height: 30)
-                        .allowsHitTesting(false)
+                        .onHover { hovering in
+                            barHover = hovering 
+                        }
                 }
-                .onHover { hovering in barHover = hovering }
+                .onHover { hovering in 
+                    barHover = hovering
+                }
                 .padding(.horizontal)
                 .transition(.move(edge: .top))
                 .animation(.easeInOut(duration: 0.3))
