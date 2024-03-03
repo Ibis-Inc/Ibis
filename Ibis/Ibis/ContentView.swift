@@ -32,12 +32,11 @@ struct ContentView: View {
     
     var body: some View {
         WebView(url: $url)
-        
             .padding(.horizontal, 7)
             .overlay(
                 Rectangle()
-                    .fill(Color.clear)
-                    .frame(height: urlHover ? 40:10)
+                    .fill(Color.red)
+                    .frame(height: urlHover ? 40:15)
                     .onHover { hovering in urlHover = hovering
                     },
                 alignment: .top
@@ -60,7 +59,7 @@ struct ContentView: View {
                             .padding(.leading, 20)
                             
                             Rectangle()
-                                .fill(Color.clear)
+                                .fill(Color.blue)
                                 .frame(height: 30)
                                 .onHover { hovering in barHover = hovering }
                                 .allowsHitTesting(false)
@@ -77,7 +76,9 @@ struct ContentView: View {
             }
     }
     
-    #Preview {
-        ContentView()
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
